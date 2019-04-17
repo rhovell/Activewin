@@ -22,19 +22,21 @@ main {
   margin: auto;
   max-width: 100%;
 }
+/* detail styling */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   color: rgb(32, 119, 213);
 }
+/* add a break to some h elements */
+.break {
+  margin-bottom: 1.8em;
+}
 p {
   margin-block-end: 2em;
 }
-.white {
-  color: rgb(255, 255, 255)!important;
-}
-.break {
-  margin-bottom: 1.8em;
+img:hover {
+  opacity: 0.8;
 }
 /*
 link styling in main page
@@ -54,10 +56,6 @@ a:hover {
   background-color: transparent;
   text-decoration: underline;
 }
-a:active {
-  transform: translateY(4px);
-
-}
 /*
 header styling
 */
@@ -74,6 +72,7 @@ header {
 /*
 main area styling
 */
+/* page background area */
 .form-container {
   width: 100%;
   height: 350px;
@@ -81,6 +80,10 @@ main area styling
   background-size: cover;
   background-position: center;
 }
+.white {
+  color: rgb(255, 255, 255)!important;
+}
+/* sign up form */
 .form-box {
   position: relative;
   top: 10%;
@@ -93,9 +96,11 @@ main area styling
   margin-right: auto;
   margin-left: auto;
 }
+/* hide the text content on the sign up form for mobile */
 .hide {
   display: none;
 }
+/* form styling */
 .form-box form {
   width: 100%;
 }
@@ -104,7 +109,6 @@ main area styling
   display: block;
   border: 0;
   margin-bottom: 5px;
-
 }
 .form-box input[type="email"] {
     width: calc(100% - 20px);
@@ -116,6 +120,7 @@ main area styling
     font-weight: 700;
     cursor: pointer;
 }
+/* main text content styling */
 .text-content h1 {
   padding-top: 1em;
 }
@@ -125,6 +130,7 @@ main area styling
 .text-content {
   padding: 1em;
 }
+/* grey area styling */
 .block.grey {
   background-color: rgb(244, 242, 242);
   padding-top: 2em;
@@ -140,6 +146,7 @@ main area styling
 .column-align:nth-child(4) {
   margin-bottom: 1em;
 }
+/* call to action styling */
 .start-button {
   background-color: rgb(12, 132, 1);
   color: rgba(255, 255, 255);
@@ -168,18 +175,18 @@ footer styling
 */
 footer {
   max-width: 100%;
-  /* margin-top: 1em; */
   margin-bottom: 0;
   color: rgb(255, 255, 255);
   background-color: rgb(36, 36, 36);
 }
+/* footer text styling */
 .footer-main {
   padding: 1em;
-
 }
 .fade {
   color: rgb(145, 145, 145);
 }
+/* copyright area styling */
 .copyright-bar {
   background-color: rgb(0, 69, 143);
   padding: 1em;
@@ -187,7 +194,4 @@ footer {
 .blue {
   color: rgb(123, 192, 249);
   font-size: 12px;
-}
-img:hover {
-  opacity: 0.8;
 }
