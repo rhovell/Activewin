@@ -8,16 +8,16 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="">
+<meta name="description" content="Tenant Protect - If you have paid a deposit since April 2012, then your landlord was required to register your deposit with one of the three government backed tenancy deposit schemes. If this has not been complied with, then you may be entitled to compensation.">
 <!-- style sheets -->
 <link rel="stylesheet" type="text/css" href="css/normalise.css">
 <!-- responsive style sheets -->
-<!-- <link rel="stylesheet" type="text/css" href="css/responsive.css"> -->
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
 <!-- google fonts -->
 <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
 
 <!-- page title -->
-<title></title>
+<title>Tenant Protect</title>
 <!-- end of head -->
 </head>
 <!-- start of body -->
@@ -26,9 +26,9 @@
 <header>
   <div class="header-bar" id="headerBar">
     <a href="#" title="Tenant Protect">
-      <img src="/img/logo.png" class="header-logo" id="headerLogo" alt="Tenant Protect">
+      <img src="/img/logo.png" class="header-logo" alt="Tenant Protect">
     </a>
-  <h2>Freephone: 0800 988 3409</h2>
+  <h2>Freephone: <a href="tel:08009883409" title="Freephone Tenant Protect">0800 988 3409</a></h2>
 </div>
   <!-- end of header -->
 </header>
@@ -37,11 +37,12 @@
   <div class="form-container">
     <div class="form-box" id="#emailCapture">
       <h2 class="white">Deposit Not Protected?</h2>
+      <p class="hide">If your deposit wasn't protected on your rented property, you could be entitled to compensation</p>
         <p>See if you qualify for a claim</p>
         <p>What's your email address?</p>
-          <form class="email-capture">
-            <input type="email" name="email" placeholder="Email">
-            <input type="submit" name="submit" value="Sign Up">
+          <form class="email-capture" method="get">
+            <input type="email" name="email" placeholder="Email" label="email">
+            <input type="submit" name="submit" value="Sign Up" label="submit" class="button-link">
           </form>
     </div>
   </div>
@@ -52,36 +53,66 @@
       <p>If this has not been complied with, then you may be entitled to compensation.</p>
   </div>
   <div class="start-claim-container">
-    <div class="start-button" id="startButton">
-      Start Claim
-    </div>
-  </div>
-  <div class="block grey">
-    <div class="process-area text-content">
-      <h1 class="break">How It Works</h1>
-      <h2>Get In Touch</h2>
-      <p>Get in touch with us by phone or email and we'll assess your case. All we need to see is a copy of your tenancy agreement from your current or previous agent.</p>
-    </div>
-    <div class="contact-icons">
-      <img src="img/contact-icons.svg" class="contact-img page-icons">
-    </div>
-    <div class="claim-icons">
-      <img src="img/claim-icons.svg" class="claim-img page-icons">
-    </div>
-    <div class="start-info text-content">
-      <h2>Start your claim</h2>
-      <p>We handle everything for you and guide you all the way through the process. From speaking to you right at the start right through to sending you your money at the end, we make sure you get the best chance of winning your case.<p>
-      <h2>Get your compensation</h2>
-      <p>We make sure your landlord or their managing agent treats you fairly and pays you a fair amount that is in line with what the Government says they must. If we recover any money for you, we take a fee of 35% (plus a small admin charge). It's on a No Win, No Fee basis so if we are unsuccessful, you owe us nothing!</p>
-    </div>
-    <div class="money-icons">
-      <img src="img/money-icons.svg" class="money-img page-icons">
-    </div>
-    <div class="start-claim-container">
-      <div class="start-button" id="startButton">
+    <a href="#" title="Start Claim" alt="Start Claim" class="button-link">
+      <div class="start-button">
         Start Claim
       </div>
+    </a>
+  </div>
+  <!-- start of grey area -->
+  <div class="block grey">
+    <!-- <div class="process-area"> -->
+      <h1 class="break">How It Works</h1>
+      <!-- start of column -->
+      <div class="column-align">
+        <div class="text-content">
+          <h2>Get In Touch</h2>
+          <p>Get in touch with us by phone or email and we'll assess your case. All we need to see is a copy of your tenancy agreement from your current or previous agent.</p>
+      </div>
+      <div class="contact-icons">
+        <a href="#" title="Contact Us For An Assessment" alt="Contact Us">
+          <img src="img/contact-icons.svg" class="contact-img page-icons" alt="Contact Us For An Assessment">
+        </a>
+      </div>
+      <!-- end of column -->
+      </div>
+    <!-- </div> -->
+    <!-- start of column -->
+    <div class="column-align">
+      <div class="claim-icons">
+        <a href="#" title="Start Your Claim Now!" alt="Start Your Claim">
+            <img src="img/claim-icons.svg" class="claim-img page-icons" alt="Start Your Claim Now!">
+          </a>
+      </div>
+      <div class="start-info text-content">
+        <h2>Start your claim</h2>
+        <p>We handle everything for you and guide you all the way through the process. From speaking to you right at the start right through to sending you your money at the end, we make sure you get the best chance of winning your case.<p>
+      </div>
+      <!-- end of column -->
     </div>
+    <!-- start of column -->
+    <div class="column-align">
+      <div class="text-content">
+        <h2>Get your compensation</h2>
+        <p>We make sure your landlord or their managing agent treats you fairly and pays you a fair amount that is in line with what the Government says they must. If we recover any money for you, we take a fee of 35% (plus a small admin charge). It's on a No Win, No Fee basis so if we are unsuccessful, you owe us nothing!</p>
+      </div>
+      <div class="money-icons">
+        <a href="#" title="Get Your Money Back Fast!" alt="Get Your Money Back">
+          <img src="img/money-icons.svg" class="money-img page-icons" alt="Get Your Money Back Fast!">
+        </a>
+      </div>
+      <!-- end of column -->
+    </div>
+    <!-- start claim CTA -->
+    <div class="start-claim-container">
+      <a href="#" title="Start Your Claim Now!" alt="Start Claim" class="button-link">
+        <div class="start-button">
+          Start Claim
+        </div>
+      </a>
+      <!-- end of CTA -->
+    </div>
+    <!-- end of grey area -->
   </div>
      <!-- end of main area -->
 </main>
@@ -91,7 +122,7 @@
   <div class="footer-main">
     <div class="footer-logo">
       <a href="#" title="Tenant Protect">
-        <img src="/img/logo-white.png" class="header-logo" id="headerLogo" alt="Tenant Protect">
+        <img src="/img/logo-white.png" class="header-logo" alt="Tenant Protect">
       </a>
     </div>
     <div class="contact-address">
@@ -110,14 +141,20 @@
   <div class="copyright-bar">
     <p class="blue">&copy;Copyright 2017 Tenant Protect Ltd</p>
     <div class="social-bar">
-      <img src="img/icon-twitter.png" class="social-icon">
-      <img src="img/icon-facebook.png" class="social-icon">
-      <img src="img/icon-instagram.png" class="social-icon">
+      <a href="https://www.twitter.com" alt="Twitter" title="Twitter">
+        <img src="img/icon-twitter.png" class="social-icon" alt="Twitter" title="Twitter">
+      </a>
+      <a href="https://www.facebook.com" alt="Facebook" title="Facebook">
+        <img src="img/icon-facebook.png" class="social-icon" alt="Facebook" title="Facebook">
+      </a>
+      <a href="https://www.instagram.com" alt="Instagram" title="Instagram">
+        <img src="img/icon-instagram.png" class="social-icon" alt="Instagram" title="Instagram">
+      </a>
   </div>
 <!-- end of footer -->
 </footer>
 <!-- javaScript files  -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/jscript" src = "java/java.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/jscript" src = "java/java.js"></script> -->
 </body>
 </html>

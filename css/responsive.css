@@ -1,11 +1,53 @@
 /* responsive styles  */
-@media screen and (min-width:425px){
 
-}
 
 @media screen and (min-width:750px){
-
+  .header-bar {
+    display: flex;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header-bar h2 {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 30%;
+  }
+  .hide {
+    display: block;
+  }
+  .form-box {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .form-box input {
+    padding: 10px;
+    display: inline;
+  }
+  .form-box input[type="email"] {
+      width: 60%;
+  }
+  .form-box input[type="submit"] {
+      width: 20%;
+  }
+  .column-align {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .text-content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .page-icons {
+    width: 250px;
+    padding: 2em;
+  }
 }
 @media screen and (min-width:1024px){
-
+  .text-content {
+    width: 50%;
+  }
 }
