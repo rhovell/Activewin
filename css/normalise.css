@@ -56,6 +56,9 @@ a:hover {
   background-color: transparent;
   text-decoration: underline;
 }
+.image-link:hover {
+  text-decoration: none;
+}
 /*
 header styling
 */
